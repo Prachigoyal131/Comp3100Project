@@ -31,6 +31,22 @@ public class MyClient{
             Server_R = in.readLine();
             System.out.println("Server says "+Server_R);
 
+            int check = 0;
+            int nRecs =0;
+            String L_server;
+            
+
+            while(!Server_R.equals("NONE")){
+                Client_R = "REDY\n";
+                dout.write(Client_R.getBytes());
+                dout.flush();
+                Server_R = in.readLine();
+                System.out.println("Server says "+Server_R);
+
+
+            }
+            
+
 
 
 
